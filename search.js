@@ -87,7 +87,7 @@ function createUIContent(formatedata) {
         //insert them[div] inside the section tag
         // <button>${movie.status}</button>
         grid.insertAdjacentHTML('beforeend', ui);
-        console.log(movie);
+        // console.log(movie);
     });
 }
 
@@ -109,9 +109,13 @@ form.addEventListener('submit', function(e){
 searchicon.addEventListener('click',function(){
     // get the valur from the input
     const searchTerm = input.value
+    if(searchTerm === ''){
+        input.focus()
+    }else{
+        // call the serachUnsplash function
+        searchmoviedb(searchTerm)
+    }
 
-    // call the serachUnsplash function
-    searchmoviedb(searchTerm)
 })
 
 //   let genre = [

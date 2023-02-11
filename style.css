@@ -117,6 +117,12 @@ input:focus{
   font-size: 18px;
   right: 30px;
   color: #333;
+  transition: all 0.5s;
+}
+
+.iconsearch:active{
+  transform: scale(0.8);
+  color: black;
 }
 
 
