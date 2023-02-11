@@ -1,6 +1,7 @@
 const form = document.querySelector('form')
 const input = document.querySelector('input')
 const grid = document.querySelector("section.result");
+const searchicon = document.querySelector('.iconsearch')
 
 let apikey = '79a920cab3fa8c3793a934d27beb01b5';
 
@@ -104,12 +105,14 @@ form.addEventListener('submit', function(e){
 
 })
 
+//when we click the search icon get the value ftom the form and make an api request
+searchicon.addEventListener('click',function(){
+    // get the valur from the input
+    const searchTerm = input.value
 
-//toggle darkmode
-function toggleContrast() {
-    document.body.classList.toggle("dark-theme");
-  }
-
+    // call the serachUnsplash function
+    searchmoviedb(searchTerm)
+})
 
 //   let genre = [
 //     {
