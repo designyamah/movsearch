@@ -58,6 +58,7 @@ const searchmoviedb = async function(term){
 function createUIContent(formatedata) {
     //remove the previoous element inside the SECTION GRID tag
     grid.innerHTML = "";
+    noresult.innerHTML = "";
     //check if the array is empty{
         if(formatedata.length === 0){
             let ui = `
