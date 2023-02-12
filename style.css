@@ -164,7 +164,7 @@ div.image:hover{
     width: 100%;
     /* z-index: 9; */
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .round{
