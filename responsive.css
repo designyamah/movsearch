@@ -40,6 +40,10 @@
         font-weight: 300;
       }
 
+      h5{
+    font-size: 17px;
+}
+
       section.hero{
        padding: 0 15px;
       }
