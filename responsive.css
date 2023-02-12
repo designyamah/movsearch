@@ -51,6 +51,10 @@
         color: white;
         font-family: 'ClashGrotesk-Medium';
     }
+
+    .iconsearch{
+      right: 15px;
+    }
       
       
     input{
