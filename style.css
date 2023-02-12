@@ -160,7 +160,6 @@ div.single-result{
   overflow: hidden;
   transition: all 0.5s;
   position: relative;
-  animation: fadein 1s 0.5s both;
 
 }
 
