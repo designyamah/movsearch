@@ -147,3 +147,25 @@ function getgenre(genre){
 }).join(', ')
 }
 
+
+// when i scroll down the page, at a certain point,
+// add a class to make the form fixed 
+
+const formTag = document.querySelector("form")
+
+const toggleform = function () {
+  const pixels = window.pageYOffset
+  
+  if (pixels > 400) {
+    formTag.classList.add("scrolled")
+  } else {
+    formTag.classList.remove("scrolled")
+  }
+}
+
+
+document.addEventListener("scroll", function () {
+    toggleform()
+  })
+  
+

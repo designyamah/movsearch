@@ -95,28 +95,29 @@ h2{
 input{
     width: 100%;
     border: none;
-    background-color: white;
+    background: #282626ab;
     padding: 20px 32px;
     outline: none;
     font-family: inherit;
     transition: all 0.5s;
     border-radius: 30px;
     font-size: 20px;
+    box-shadow: 0px 0px 4px white;
 
 }
 
 input:focus{
-    color: #333;
+    color: white;
     box-shadow: 0px 0px 10px white;
 }
 
 .iconsearch{
   position: absolute;
   top: 50%;
-  transform: translate(0px, -50%);
+  transform: translate(-32%, -50%);
   font-size: 18px;
-  right: 30px;
-  color: #333;
+  right: 32px;
+  color: white;
   transition: all 0.5s;
 }
 
@@ -283,24 +284,28 @@ footer {
   }
   
   
-body.dark-theme{
-    background-color: #333;
-    color: white;
+.scrolled{
+  position: fixed;
+  z-index: 14;
+  padding: 10px 32px;
+  background: none;
+  top: 0;
+  /* border-bottom-right-radius: 30px; */
+  /* border-bottom-left-radius: 30px; */
+  backdrop-filter: blur(101px);
+  width: 100%;
+  max-width: none;
 }
-  
-body.dark-theme a{
-    color: white;
+
+.scrolled .iconsearch{
+  right: 50px;
 }
-  
-body.dark-theme a:hover {
-    color: #eee
+
+.scrolled input{
+  padding: 10px 32px;
 }
 
 
-body.dark-theme footer{
-    background-color: #333;
-}
-  
 
 @keyframes fadein {
     0%{
