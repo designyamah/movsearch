@@ -172,7 +172,7 @@ div.image:hover{
     width: 100%;
     /* z-index: 9; */
     position: absolute;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .round{
@@ -190,7 +190,7 @@ div.image:hover{
 
 div.text{
   /* background: white; */
-  backdrop-filter: blur(61px);
+  backdrop-filter: blur(151px);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 25px;
