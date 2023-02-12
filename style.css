@@ -67,10 +67,16 @@ h2{
     font-weight: 300;
   }
 
+h5{
+    font-size: 20px;
+    font-weight: 200;
+}
+
   section.hero h3 {
     font-size: 75px;
     color: white;
     font-family: 'ClashGrotesk-Medium';
+    line-height:1;
 }
   
   
