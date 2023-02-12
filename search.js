@@ -2,6 +2,7 @@ const form = document.querySelector('form')
 const input = document.querySelector('input')
 const grid = document.querySelector("section.result");
 const searchicon = document.querySelector('.iconsearch')
+const noresult = document.querySelector('.noresultwrapper')
 
 let apikey = '79a920cab3fa8c3793a934d27beb01b5';
 
@@ -23,6 +24,7 @@ const searchmovieFirst = async function(term){
 
     //call the function to create the divconentent in the html
     createUIContent(formatedata);
+    console.log(formatedata)
     // console.log(formatedata)
     } catch (error) {
         console.log(error.message)
@@ -47,7 +49,7 @@ const searchmoviedb = async function(term){
        //call the function to create the divconentent in the html
       createUIContent(formatedata)
  
-    console.log(data)
+    console.log(formatedata)
     } catch (error) {
         console.log(error.message)
     }
@@ -56,6 +58,17 @@ const searchmoviedb = async function(term){
 function createUIContent(formatedata) {
     //remove the previoous element inside the SECTION GRID tag
     grid.innerHTML = "";
+    //check if the array is empty{
+        if(formatedata.length === 0){
+            let ui = `
+             <div class="noresult">
+                    No Result Found, Search another Movie
+             </div>
+            `;
+             //insert them[div] inside the section tag
+             noresult.insertAdjacentHTML('beforeend', ui);
+        }else{
+
     //loop throught the formateddata and create html content
     formatedata.forEach(async (mo) => {
         let movie = await mo;
@@ -79,17 +92,16 @@ function createUIContent(formatedata) {
                     <p class="movieruntime"><span>Lang:</span> <br><span class="round">${movie.original_language.toUpperCase()}</span></p>
                 </div>
                 <p class="moviestory"><span class="round">Storyline</span></p>
-                <p class="movieplot">${movie.overview}</p>
-               
-
-                
+                <p class="movieplot">${movie.overview}</p> 
             </div>
             </div>`;
         //insert them[div] inside the section tag
         // <button>${movie.status}</button>
         grid.insertAdjacentHTML('beforeend', ui);
-        // console.log(movie);
+        console.log(movie);
+        
     });
+}
 }
 
 

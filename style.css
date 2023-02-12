@@ -119,6 +119,7 @@ input:focus{
   font-size: 18px;
   right: 32px;
   color: white;
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -304,6 +305,11 @@ footer {
 
 .scrolled input{
   padding: 10px 32px;
+}
+
+.noresult{
+  font-size: 30px;
+  text-align: center;
 }
 
 
