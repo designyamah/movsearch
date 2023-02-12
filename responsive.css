@@ -140,6 +140,10 @@
       justify-content: center;
       font-size: 11px;
     }
+
+    button {
+      right: 15px;
+  }
       
   }
   

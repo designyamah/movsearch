@@ -62,6 +62,7 @@ function createUIContent(formatedata) {
 
         let ui = `
        <div class="single-result">
+       <button>${movie.status}</button>
        <div class="image floatbg">
                 <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" alt="">
         </div>
