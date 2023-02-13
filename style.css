@@ -276,7 +276,7 @@ img{
 }
 
 footer {
-  /* position: fixed; */
+  position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -348,7 +348,7 @@ footer span{
     animation: fadein 1s 0.5s both;
     max-width: 200px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 37px;
     cursor: pointer;
 }
 
