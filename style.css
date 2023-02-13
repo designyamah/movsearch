@@ -352,7 +352,7 @@ footer span{
     cursor: pointer;
 }
 
-.loadmore:active,.loadmore:hover{
+.loadmore:hover{
   background: black;
 }
 
