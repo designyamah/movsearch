@@ -356,6 +356,16 @@ footer span{
   background: black;
 }
 
+.loadmore button{
+    position: static;
+    background: transparent;
+    backdrop-filter: unset;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: unset;
+    font-size: 16px;
+}
+
 
 
 @keyframes fadein {
