@@ -226,7 +226,6 @@ const searchmovieFirst2 = async function(term){
 function createUIContent2(formatedata) {
     //dont reove the previous the previoous element inside the SECTION GRID tag
     // grid.innerHTML = "";
-            grid.classList.remove('addclassfornoresult')
     //loop throught the formateddata and create html content
     formatedata.forEach(async (mo) => {
         let movie = await mo;
@@ -254,10 +253,8 @@ function createUIContent2(formatedata) {
             </div>
             </div>`;
         //insert them[div] inside the section tag
-        // <button>${movie.status}</button>
         grid.insertAdjacentHTML('beforeend', ui);
         console.log(movie);
-        
     });
 }
 
