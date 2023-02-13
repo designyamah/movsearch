@@ -6,6 +6,10 @@
     font-size: 12px;
     padding: 15px;
   }
+
+  .addclassfornoresult{
+    padding-top:15px
+  }
 }
 
 @media (max-width: 320px) {

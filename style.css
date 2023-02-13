@@ -328,6 +328,11 @@ footer span{
 .noresult{
   font-size: 18px;
   text-align: center;
+  animation: fadein 1s 0.5s both;
+}
+
+.addclassfornoresult{
+  padding-top:32px
 }
 
 

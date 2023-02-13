@@ -61,6 +61,7 @@ function createUIContent(formatedata) {
     noresult.innerHTML = "";
     //check if the array is empty{
         if(formatedata.length === 0){
+            grid.classList.add('addclassfornoresult')
             let ui = `
              <div class="noresult">
                     No Result Found, Search another Movie
@@ -69,7 +70,7 @@ function createUIContent(formatedata) {
              //insert them[div] inside the section tag
              noresult.insertAdjacentHTML('beforeend', ui);
         }else{
-
+            grid.classList.remove('addclassfornoresult')
     //loop throught the formateddata and create html content
     formatedata.forEach(async (mo) => {
         let movie = await mo;
