@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'ClashGrotesk-Medium';
-  src: url('fonts/ClashGrotesk-Medium.woff2') format('woff2'),
-       url('fonts/ClashGrotesk-Medium.woff') format('woff');
+  src: url('fonts/NeuePlak-ExtendedBold.woff2') format('woff2'),
+       url('fonts/NeuePlak-ExtendedBold.woff') format('woff');
       
 }
 
 @font-face {
   font-family: 'ClashGrotesk-Regular';
-  src: url('fonts/ClashGrotesk-Regular.woff2') format('woff2'),
-       url('fonts/ClashGrotesk-Regular.woff') format('woff');
+  src: url('fonts/NeuePlak-ExtendedRegular.woff2') format('woff2'),
+       url('fonts/NeuePlak-ExtendedRegular.woff') format('woff');
 }
 
 
