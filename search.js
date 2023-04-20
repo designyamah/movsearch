@@ -2,6 +2,7 @@ const form = document.querySelector('form')
 const input = document.querySelector('input')
 const grid = document.querySelector("section.result");
 const searchicon = document.querySelector('.iconsearch')
+const cancelicon = document.querySelector('.iconclose')
 const noresult = document.querySelector('.noresultwrapper')
 const loadmore = document.querySelector('.loadmore')
 
@@ -136,6 +137,30 @@ searchicon.addEventListener('click',function(){
     }else{
         // call the serachUnsplash function
         searchmoviedb(searchTerm)
+    }
+
+})
+
+
+//when we click the cancel icon remove the input firld value
+cancelicon.addEventListener('click',function(){
+   input.value = '';
+   cancelicon.style.display = "none"
+
+})
+
+//when we start typying on the input add the cancel icon and remove the serach icon
+form.addEventListener('input',function(){
+    // get the valur from the input
+    const searchTerm = input.value
+    if(searchTerm === ''){
+        // searchicon.style.display = "block"
+        cancelicon.style.display = "none"
+
+    }else{
+        // call the serachUnsplash function
+        // searchicon.style.display = "none"
+        cancelicon.style.display = "block"
     }
 
 })

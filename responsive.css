@@ -26,6 +26,7 @@
 
   h5 {
     font-size: 15px;
+    margin-bottom: 8px;
   }
 
   section.hero {
@@ -43,6 +44,10 @@
 
   .iconsearch {
     right: 15px;
+  }
+
+  .iconclose{
+    right: 40px;
   }
 
   input {
@@ -153,6 +158,12 @@
   .scrolled .iconsearch {
     right: 30px;
   }
+
+  .scrolled .iconclose{
+    right: 55px;
+  }
+
+ 
 
   .scrolled input {
     padding: 15px;
