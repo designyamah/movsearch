@@ -114,7 +114,7 @@ h5{
     min-height: 80vh;
     flex-direction: column;
     border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 30px;
     gap: 20px;
     display: flex;
     align-items: center;
