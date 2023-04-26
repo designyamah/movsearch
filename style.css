@@ -357,12 +357,9 @@ footer span{
   background: none;
   border-bottom-left-radius: 30px;
   top: 0;
-  /* border-bottom-right-radius: 30px; */
-  /* border-bottom-left-radius: 30px; */
   backdrop-filter: blur(101px);
   width: 100%;
   max-width: none;
-  border-bottom-right-radius: 30px;
 }
 
 .scrolled .iconsearch{
