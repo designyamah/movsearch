@@ -268,7 +268,11 @@ function createUIContent2(formatedata) {
                 <h3 class="movietitle">${movie.original_title}</h3>
                 <p class="moviegenre">${getgenre(movie.genres)}</p>
                 <div class="moviewrappers">
-                    <p class="movieruntime"><span class="moviesub">Runtime:</span> <br><span class="round">${movie.runtime}min</span></p>
+                    <p class="movieruntime">
+                    <span class="moviesub">Runtime:</span> 
+                    <br>
+                    <span class="round">${movie.runtime}min</span>
+                    </p>
                     <p class="movieyear"><span class="moviesub">Year:</span> <br><span class="round">${movie.release_date.slice(0,4)}</span></p>
                     <p class="movieruntime"><span class="moviesub">Companie:</span> <br><span class="round">${movie.production_companies[0].name}</span></p>
                     <p class="movieruntime"><span class="moviesub">Lang:</span> <br><span class="round">${movie.original_language.toUpperCase()}</span></p>
