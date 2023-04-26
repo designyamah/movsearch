@@ -355,7 +355,6 @@ footer span{
   z-index: 14;
   padding: 10px 32px;
   background: none;
-  border-bottom-left-radius: 30px;
   top: 0;
   backdrop-filter: blur(101px);
   width: 100%;
