@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'ClashGrotesk-Medium';
+  font-family: 'NeuePlak-ExtendedBold';
   src: url('fonts/NeuePlak-ExtendedBold.woff2') format('woff2'),
        url('fonts/NeuePlak-ExtendedBold.woff') format('woff');
       
 }
 
 @font-face {
-  font-family: 'ClashGrotesk-Regular';
+  font-family: 'NeuePlak-ExtendedRegular';
   src: url('fonts/NeuePlak-ExtendedRegular.woff2') format('woff2'),
        url('fonts/NeuePlak-ExtendedRegular.woff') format('woff');
 }
@@ -19,12 +19,11 @@
 }
 
 body {
-	font-family: 'ClashGrotesk-Regular', sans-serif;
+	font-family: 'NeuePlak-ExtendedRegular', sans-serif;
 	line-height: 1.5;
-	
-	background-color: #333;
+	background-color: #191818;
 	color: white;
-  transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 header {
@@ -93,7 +92,7 @@ h5{
   section.hero h3 {
     font-size: 75px;
     color: white;
-    font-family: 'ClashGrotesk-Medium';
+    font-family: 'NeuePlak-ExtendedBold';
     line-height:1;
     animation: fadein 1s 0.5s both;
     text-align: center;
@@ -101,11 +100,13 @@ h5{
   
   
   section.hero{
-    background: linear-gradient(#333333e0,#333333e0), url(img/images\ \(6\).jpeg);
+    background: linear-gradient(#191818de,#191818de), url(img/images\ \(6\).jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 80vh;
     flex-direction: column;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 50px;
     gap: 20px;
     display: flex;
     align-items: center;
@@ -341,12 +342,14 @@ footer span{
   z-index: 14;
   padding: 10px 32px;
   background: none;
+  border-bottom-left-radius: 30px;
   top: 0;
   /* border-bottom-right-radius: 30px; */
   /* border-bottom-left-radius: 30px; */
   backdrop-filter: blur(101px);
   width: 100%;
   max-width: none;
+  border-bottom-right-radius: 30px;
 }
 
 .scrolled .iconsearch{
