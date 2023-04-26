@@ -6,9 +6,17 @@
 }
 
 @font-face {
+  font-family: 'NeuePlak-ExtendedLight';
+  src: url('fonts/NeuePlak-ExtendedLight.woff2') format('woff2'),
+       url('fonts/NeuePlak-ExtendedBold.woff') format('woff');
+      
+}
+
+@font-face {
   font-family: 'NeuePlak-ExtendedRegular';
   src: url('fonts/NeuePlak-ExtendedRegular.woff2') format('woff2'),
        url('fonts/NeuePlak-ExtendedRegular.woff') format('woff');
+      
 }
 
 
@@ -20,8 +28,8 @@
 
 body {
 	font-family: 'NeuePlak-ExtendedRegular', sans-serif;
-	line-height: 1.5;
-	background-color: #191818;
+	line-height: 1.6;
+	background-color: #131313;
 	color: white;
 	transition: all 0.5s;
 }
@@ -68,6 +76,7 @@ span{
   display: inline-block;
   /* font-weight:900; */
   font-size: 13px;
+  opacity: 0.7;
   margin-bottom: 4px;
 }
 
@@ -210,11 +219,11 @@ div.image:hover{
 }
 
 .floatbg{
-  bottom: 0px;
-    width: 100%;
-    /* z-index: 9; */
-    position: absolute;
-    opacity: 1;
+  bottom: 310px;
+  width: 100%;
+  /* z-index: 9; */
+  position: absolute;
+  opacity: 0.1;
 }
 
 .round{
@@ -222,25 +231,25 @@ div.image:hover{
   color: white;
   /* border-bottom: 2px solid; */
   padding: 5px 5px;
+  padding-top: 7px;
   border-radius: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 11px;
   box-shadow: 0px 0px 4px white;
+  padding-bottom: 4px;
 }
 
 div.text{
-  /* background: white; */
-  backdrop-filter: blur(151px);
+  background: #0000006b;
+  backdrop-filter: blur(101px);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 25px;
   position: relative;
   margin-top: -27px;
-  
   height: 100%;
-
 }
 
 div.moviewrappers{
@@ -251,6 +260,7 @@ div.moviewrappers{
 
 .movietitle {
   font-size: 24px;
+  font-family: 'NeuePlak-ExtendedRegular';
   color: white;
 }
 
@@ -261,8 +271,9 @@ div.moviewrappers{
 }
 
 .movieplot{
-  color: white;
+  color: #a3a3a3;
   font-size: 17px;
+  opacity: 0.8;
 }
 
 .moviegenre{
@@ -280,6 +291,10 @@ div.moviewrappers{
 
 .moviestory{
   margin: 0;
+}
+
+.moviesub{
+  color: #a3a3a3;
 }
 
 button {
