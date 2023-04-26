@@ -245,7 +245,7 @@ const searchmovieFirst2 = async function(term){
     // console.log(formatedata)
     } catch (error) {
         console.log(error.message)
-        loadmore.innerHTML = "loading"
+        loadmore.innerHTML = "loading..."
     }
 }
 
