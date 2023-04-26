@@ -127,7 +127,8 @@
 
   .movieplot {
     font-size: 15px;
-  }
+    opacity: 0.9;
+}
 
   .moviegenre {
     color: white;
