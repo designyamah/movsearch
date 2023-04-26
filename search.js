@@ -242,6 +242,8 @@ const searchmovieFirst2 = async function(term){
     //call the function to create the divconentent in the html
     createUIContent2(formatedata);
     console.log(formatedata)
+    loadmore.innerHTML = "Load more"
+
     // console.log(formatedata)
     } catch (error) {
         console.log(error.message)
