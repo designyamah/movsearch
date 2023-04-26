@@ -76,7 +76,6 @@ span{
   display: inline-block;
   /* font-weight:900; */
   font-size: 13px;
-  opacity: 0.8;
   margin-bottom: 4px;
 }
 
@@ -272,7 +271,6 @@ div.moviewrappers{
 .movieplot{
   color: #a3a3a3;
   font-size: 17px;
-  opacity: 0.8;
 }
 
 .moviegenre{
